@@ -8,8 +8,17 @@ namespace DijkstraShortestPath
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            InputData dijkstra = InputData.BuildInputDataSet();
+            TravelData routes = TravelData.BuildTravelDataSet(dijkstra);    
+            ExploreData.Explore(dijkstra, routes);
+            ExploreData.PrintResults(dijkstra, routes);
+            
+            // Keep the console open in debug mode.
+            Console.WriteLine("\nPress any key to exit.");
+            Console.ReadKey();
         }
+
     }
 }

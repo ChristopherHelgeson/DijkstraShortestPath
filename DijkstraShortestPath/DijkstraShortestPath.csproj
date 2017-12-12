@@ -42,8 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Edge.cs" />
+    <Compile Include="ExploreData.cs" />
+    <Compile Include="InputData.cs" />
+    <Compile Include="Leg.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TravelData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
